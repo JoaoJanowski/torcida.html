@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(90deg, rgb(158, 0, 0) 0%, rgb(169, 52, 52) 35%, rgb(190, 170, 170) 100%);
+}
+
+.container {
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+}
+
+.nav-links li a:hover {
+    color: #660000;
+    transition: .1s;
+}
+
+.nav-links li.selected a {
+    color: #660000;
+}
