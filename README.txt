@@ -1,5 +1,5 @@
 Referências do código:
-Canva, W3school, 
+Canva, W3school, Google Fonts, Developer Mozilla, CssGradient.io
 
 Referências das imagens: 
 Instagram, Canva, autoria própria.
