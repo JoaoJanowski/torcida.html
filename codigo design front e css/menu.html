@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubro Negro</title>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <ul class="nav-links">
+                <li class="aba-nav"><a href="#">Menu</a></li>
+                <li class="aba-nav"><a href="futebol.html">Futebol</a></li>
+                <li class="aba-nav"><a href="volei.html">Vôlei</a></li>
+                <li class="aba-nav"><a href="sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+
+    <div class="news-container">
+        <div class="news-box">
+            <img src="https://via.placeholder.com/400x200" alt="Notícia 1">
+            <div class="content">
+                <h3>Entrega das camisetas realizada!</h3>
+                <p>As camisetas do interclasse 2024 foram entregues, junto com elas, a faixa e o bandeirão também ficaram prontos!</p>
+            </div>
+        </div>
+        
+        <div class="news-box">
+            <img src="https://via.placeholder.com/400x200" alt="Notícia 2">
+            <div class="content">
+                <h3>Jogos adiados.</h3>
+                <p>A partida do 2D x 2A foi adiada para esta segunda-feira, dia 18/11.</p>
+            </div>
+        </div>
+
+        <div class="news-box">
+            <img src="https://via.placeholder.com/400x200" alt="Notícia 3">
+            <div class="content">
+                <h3>Faixa e bandeirão chegaram!</h3>
+                <p>Com um pouco de atraso e muitas mudanças de design, a faixa e o bandeirão do 2D chegaram.</p>
+            </div>
+        </div>
+
+        <div class="news-box">
+            <img src="https://via.placeholder.com/400x200" alt="Notícia 4">
+            <div class="content">
+                <h3>Jogos do vôlei próximos!</h3>
+                <p>Com o quase encerramento dos jogos de futsal, o início do vôlei se aproxima!</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<style>
+    
+    body {
+        margin: 25px;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        background: rgb(2,0,36);
+        background: linear-gradient(125deg, rgb(255, 182, 182) 0%, rgba(201,52,52,1) 55%, rgb(59, 0, 0) 100%);
+        color: white;
+    }
+
+    .container {
+        margin: 25px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-links li {
+        display: inline;
+        margin: 30px;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: #000000;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 25px;
+    }
+
+    .nav-links li a:hover {
+        color: #840000;
+        transition: .1s;
+    }
+
+    .nav-links li.selected a {
+        color: #840000;
+    }
+
+    hr {
+        width: 75%;
+        border: none;
+        border-top: 2px solid black; 
+        margin: 20px auto;
+    }
+
+    /* Estilo das caixas de notícia */
+    .news-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .news-box {
+        border: 2px solid #000000;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-box img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .news-box .content {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .news-box h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .news-box p {
+        font-size: 1em;
+        color: #ffffff;
+    }
+</style>
+
+</html>
