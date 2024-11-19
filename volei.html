@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLEI - 2D</title>
+</head>
+<body>
 
+    <div class="container">
+        <nav>
+            <ul class="nav-links">
+                <li class="aba-nav"><a href="menu.html">Menu</a></li>
+                <li class="aba-nav"><a href="futebol.html">Futebol</a></li>
+                <li class="aba-nav"><a href="#">Vôlei</a></li>
+                <li class="aba-nav"><a href="sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+    <div class="content-wrapper">
+        <div class="left-image"></div>
+        <div class="main-content">
+            <div class="news-container">
+                <div class="news-box">
+                    <img src="https://via.placeholder.com/200x150" alt="Notícia 1">
+                    <div class="content">
+                        <h3>Está chegando!</h3>
+                        <p>JOGOS DO VÔLEI ESTÃO CADA VEZ MAIS PRÓXIMOS DE COMEÇAR! FIQUEM LIGADOS!</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="prox-confronto">
+                <h2>PRÓXIMO CONFRONTO:</h2>
+                <br>
+                <h1>2D x 2A<br>ABERTURA DOS JOGOS</h1>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(125deg, rgb(255, 182, 182) 0%, rgba(201, 52, 52, 1) 55%, rgb(59, 0, 0) 100%);
+    color: white;
+}
+
+.container {
+    margin: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 25px;
+}
+
+.nav-links li a:hover {
+    color: #840000;
+    transition: 0.1s;
+}
+
+.nav-links li.selected a {
+    color: #840000;
+}
+
+hr {
+    width: 85%;
+    border: none;
+    border-top: 2px solid black;
+    margin: 30px auto;
+}
+
+.content-wrapper {
+    display: flex;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.left-image {
+    width: 25%;
+    margin-right: 20px;
+    background: url('https://images.vexels.com/content/156466/preview/volleyball-spike-position-fb231b.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.main-content {
+    flex: 1;
+    text-align: center;
+}
+
+.main-content img {
+    width: 70%;
+    max-width: 500px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.main-content p {
+    font-size: 18px;
+    margin: 10px 0 30px;
+}
+
+.prox-confronto h1, h2 {
+    color: #000000;
+}
+
+.prox-confronto h1 {
+    font-size: 40px;
+}
+</style>
+
+</html>
